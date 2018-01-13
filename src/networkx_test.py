@@ -1,19 +1,16 @@
 import networkx as nx
+import matplotlib.pyplot as plt
 
 def main():
     G = nx.Graph()
-    G.add_node(1)
-    G.add_nodes_from([2, 3])
-    G.add_edge(1,2)
-    e = (2, 3)
-    G.add_edge(*e)
+    G.add_node("조준영")
+    G.add_node("김영진")
+    G.add_edge("조준영","김영진")
 
-    print(G.number_of_nodes())
-    print(G.number_of_edges())
-    print(list(G.nodes))
-    print(list(G.edges))
-    print(list(G.adj[1]))
-    print(G.degree[1])
+    nx.write_yaml(G, "data.yml")
+
+    nx.draw(G)
+    plt.show()
 
 if __name__ == '__main__':
     main()
