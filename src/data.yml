@@ -1,0 +1,15 @@
+&id003 !!python/object:networkx.classes.graph.Graph
+_adj:
+  "\uAE40\uC601\uC9C4":
+    "\uC870\uC900\uC601": &id001 {}
+  "\uC870\uC900\uC601":
+    "\uAE40\uC601\uC9C4": *id001
+_node:
+  "\uAE40\uC601\uC9C4": {}
+  "\uC870\uC900\uC601": {}
+adjlist_inner_dict_factory: &id002 !!python/name:builtins.dict ''
+adjlist_outer_dict_factory: *id002
+edge_attr_dict_factory: *id002
+graph: {}
+node_dict_factory: *id002
+root_graph: *id003
